@@ -1,0 +1,62 @@
+@use '../variables'
+@use '../mixins'
+
+.projects-container
+    margin-bottom: 1rem
+
+    .projects-card
+        padding: 1rem
+        border: 1px solid #333
+        border-radius: variables.$card-border-radius
+
+        .projects-row
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            width: 100%
+
+            .projects-column
+                display: flex
+                flex-direction: column
+                flex-basis: 100%
+                flex: 1
+
+
+
+        h3
+            color: variables.$text-color
+            margin-bottom: 1rem
+        
+        .projects-img
+            width: 100%
+
+            .img-style
+                width: 400px
+                border-radius: 10px
+                box-shadow: 8px 10px 16px -2px rgb(0 0 0 / 70%)
+
+        .projects-info
+            width: 100%
+
+        .projects-links
+            margin-top: 7px
+            margin-bottom: 7px
+            display: flex
+    
+            .projects-link
+                text-decoration: none
+                
+            .link-btn
+                display: flex
+                justify-content: center
+                align-items: center
+                color: variables.$text-color
+                background: variables.$gradient
+                text-shadow: 1px 1px 3px #000
+                border-radius: 4px
+                width: -webkit-max-content
+                width: max-content
+                padding: 4px 6px
+                margin-right: 7px
+                font-size: 16px
+
