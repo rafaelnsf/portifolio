@@ -11,7 +11,6 @@ function App() {
       <Sidebar />
       <MainContent />
       {/* TODO CONTACT FORM */}
-      {/* TODO FOOTER */}
     </div>
   );
 }

@@ -1,0 +1,85 @@
+@use '../variables'
+@use '../mixins'
+
+.contactus-container
+    display: flex
+    flex: 0 1 700px
+    margin: auto
+
+    .contactus-screen 
+        position: relative
+        border-radius: 15px
+        padding: 1rem
+        border: 1px solid #333
+        border-radius: variables.$card-border-radius
+
+        .screen:after 
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 20px
+            right: 20px
+            bottom: 0
+            border-radius: 15px
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .4)
+            z-index: -1
+
+        .contactus-screen-body 
+            display: flex
+
+
+        .contactus-screen-body-item 
+            flex: 1
+            padding: 5px
+
+
+        .contactus-screen-body-item.left 
+            display: flex
+            flex-direction: column
+
+
+        .contactus-form-group 
+            margin-bottom: 15px
+
+
+        .contactus-form-group.message 
+            margin-top: 40px
+
+
+        .contactus-form-group.buttons 
+            margin-bottom: 0
+            text-align: right
+
+
+        .contactus-form-control 
+            width: 100%
+            padding: 10px 0
+            background: none
+            border: none
+            border-bottom: 1px solid #666
+            color: #ddd
+            font-size: 14px
+            outline: none
+            transition: border-color .2s
+
+
+        .contactus-form-control::placeholder 
+            color: #666
+
+
+        .contactus-form-control:focus 
+            border-bottom-color: #ddd
+
+
+        .btnSend
+            justify-content: right
+            color: variables.$text-color
+            background: variables.$gradient
+            text-shadow: 1px 1px 3px #000
+            border: none
+            border-radius: 4px
+            padding: 4px 6px
+            margin-right: 7px
+            font-size: 16px
+            cursor: pointer
